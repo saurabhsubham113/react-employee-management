@@ -1,0 +1,11 @@
+.add-employee-container{
+    margin: auto;
+    width: fit-content;
+    padding: 15px;
+    border: 1px solid rgba(56, 81, 192, 0.425);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+.caption{
+    margin-top: -0.8rem;
+}

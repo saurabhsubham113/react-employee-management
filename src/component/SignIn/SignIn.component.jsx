@@ -14,7 +14,6 @@ class SignIn extends Component {
     }
     
     handleChange = event => {
-        
         this.setState({[event.target.name] : event.target.value})
     }
 
@@ -29,10 +28,10 @@ class SignIn extends Component {
         if(res.data.status === 'success'){
             localStorage.setItem('token',res.data.data.token)
             this.props.history.push('/dashboard')
+            
         }else{
             alert(res.data.error)
         }
-        this.setState({email: '',password: ''})
     }
 
     render() {
