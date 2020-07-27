@@ -25,11 +25,10 @@ class SignIn extends Component {
             password: this.state.password
         }
         let res = await axios.post(`${url}/login`,body)
-        console.log(res)
-        if(res.data['status'] === 'success'){
+
+        if(res.data.status === 'success'){
             localStorage.setItem('token',res.data.data.token)
-            const user = res.data.data.user
-            console.log(user);
+            this.props.history.push('/dashboard')
         }else{
             alert(res.data.error)
         }

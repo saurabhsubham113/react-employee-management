@@ -1,0 +1,10 @@
+.Navbar{
+    color:white;
+    text-align:center;
+    background-color:#1a66ff;
+    height:3.5rem;
+    font-weight:bolder;
+    font-size:2rem;
+    margin-bottom: 3%;
+    width: 100%;
+}
